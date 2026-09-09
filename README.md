@@ -1,1 +1,1 @@
-![Pacman Animation](https://raw.githubusercontent.com/pagongtotherescue/pagongtotherescue/output/pacman.svg)
+![Pacman Animation](https://raw.githubusercontent.com/pagongtotherescue/pagongtotherescue/output/dist/pacman.svg)
