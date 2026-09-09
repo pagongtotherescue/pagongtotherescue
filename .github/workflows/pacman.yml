@@ -20,9 +20,9 @@ jobs:
       - name: Generate Pacman SVG
         uses: abozanona/pacman-contribution-graph@main
         with:
-          username: ${{ github.repository_owner }}
-          game: 'pacman'
-          gameTheme: 'github-dark'
+          github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          games: 'pacman'
 
       - name: Push SVGs to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
