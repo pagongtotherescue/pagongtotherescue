@@ -1,1 +1,1 @@
-![Pacman Animation](https://raw.githubusercontent.com/pagongtotherescue/pagongtotherescue/output/dist/pacman.svg)
+![Minecraft Creeper Snake](https://raw.githubusercontent.com/pagongtotherescue/pagongtotherescue/output/creeper-snake.svg)

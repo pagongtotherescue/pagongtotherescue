@@ -1,4 +1,4 @@
-name: Generate Pacman Contribution Graph
+name: Generate Creeper Snake Animation
 
 on:
   schedule:
@@ -10,21 +10,19 @@ on:
 
 jobs:
   generate:
-    permissions:
+    permissions: 
       contents: write
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
 
-      - name: Generate Pacman SVG
-        uses: abozanona/pacman-contribution-graph@main
+    steps:
+      - name: generate-creeper-snake-svg
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          games: 'pacman'
+          outputs: |
+            dist/creeper-snake.svg?palette=github-dark&color_snake=#55FF55&color_dots=#0a0a0a,#0f380f,#306230,#8bac0f,#9bbc0f
 
-      - name: Push SVGs to output branch
+      - name: push-to-output-branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
